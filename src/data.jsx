@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "MongoDB | Express | React.js | Node.js | Tailwind.css",
     description:
       "Responsive Full Stack MERN application which generates images as per the given prompt using OpenAI API",
-    image: "/public/project2.jpg",
+    image: "../public/project2.jpg",
     link: "https://image-runner.netlify.app/",
     code_link:"https://github.com/mhsid99/Image_Runner"
   },
@@ -13,7 +13,7 @@ export const projects = [
     subtitle: "Python | OpenCV | Dlib | Imutils | Scipy",
     description:
       "Utilizes computer vision and ML Algorithms to calculate Eye Aspect Ratio(EAR) to detects if the driver is drowsy and raises an alram inorder to prevent road accidents",
-    image: "./project1.jpg",
+    image: "D:/Projects/Portfolio/public/project1.jpg",
     link: "https://www.youtube.com/watch?v=MmNHO5OBMmA",
     code_link:"https://github.com/mhsid99/Sleepy-driver-detection-with-python-and-opencv"
   },

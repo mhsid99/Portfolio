@@ -34,7 +34,7 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white hover:text-green-600">
-                            <Link to="/" onClick={() => setNavbar(false)}>Home</Link>
+                            <Link to="/portfolio" onClick={() => setNavbar(false)}>Home</Link>
                             </li>
                             <li className="text-white hover:text-green-600">
                             <Link to="/Projects" onClick={() => setNavbar(false)}>
@@ -43,7 +43,7 @@ export default function NavBar() {
                             </li>
 
                             <li className="text-white hover:text-green-600">
-                            <Link to="/skills" onClick={() => setNavbar(false)}>
+                            <Link to="/Skills" onClick={() => setNavbar(false)}>
                                     Skills
                                 </Link>
                             </li>

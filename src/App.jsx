@@ -35,10 +35,9 @@ export default function App() {
             <TopButton />
           </main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<HomePage />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/Skills" element={<Skills />} />
           </Routes>
 
           
