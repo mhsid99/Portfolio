@@ -1,0 +1,18 @@
+.social-icon {
+    transition: transform 0.2s ease-in-out;
+}
+  
+.social-icon:hover {
+    transform: translateY(-8px);
+}
+.wrapper {
+    background-color: #fff;
+}
+.preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Make sure it's on top of everything */
+  }
+

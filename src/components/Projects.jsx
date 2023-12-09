@@ -1,0 +1,74 @@
+import React, { useState } from "react";
+import { projects } from "../data";
+
+export default function Projects() {
+  const [activeSubtitle, setActiveSubtitle] = useState(null);
+
+  const toggleSubtitle = (index) => {
+    setActiveSubtitle((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  return (
+    <section id="projects" className="text-gray-400 bg-gray-900 body-font" style={{ fontFamily: "Raleway"}}>
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full mb-20">
+          <div className=" mb-11"/>
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+            <span className="border-b-4 border-green-600">Software Projects</span>
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
+            From Fullstack Web Development to delving into the realms of Machine Learning, Computer Vision
+            and Robotics, I've ventured across a diverse spectrum of technologies and domains.
+          </p>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {projects.map((project, index) => (
+            <a
+              //href={project.link}
+              key={project.image}
+              className="sm:w-1/2 w-100 p-4"
+              onClick={() => toggleSubtitle(index)}
+            >
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={project.image}
+                />
+                <div
+                  className={`px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 ${
+                    activeSubtitle === index ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                    {project.subtitle}
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+                  </h1>
+                  <p className="leading-relaxed">{project.description}</p>
+                  <div className="flex mt-4">
+                  {project.link && (
+                      <a
+                        href={project.link}
+                        className="text-green-400 border-green-400 border-2 py-1 px-4 rounded-full transition duration-300 hover:bg-green-400 hover:text-gray-900 mr-3"
+                      >
+                        Demo
+                      </a>
+                    )}
+                    <a
+                      href={project.code_link}
+                      className="text-gray-400 border-gray-400 border-2 py-1 px-4 rounded-full transition duration-300 hover:bg-gray-400 hover:text-gray-900"
+                    >
+                      Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
