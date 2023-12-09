@@ -35,7 +35,7 @@ export default function App() {
             <TopButton />
           </main>
           <Routes>
-            <Route path="/Portfolio" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
