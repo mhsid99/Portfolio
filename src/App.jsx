@@ -4,7 +4,6 @@ import HomePage from "./components/HomePage";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Contact from "./components/ContactPage";
 import TopButton from "./components/TopButton";
 import { useState, useEffect } from "react";
 import { PacmanLoader } from "react-spinners";
@@ -46,14 +45,3 @@ export default function App() {
     </div>
   );
 }
-/*import React from 'react'
-
-const App = () => {
-  return (
-    <div>
-      <p>Hello world</p>
-    </div>
-  )
-}
-
-export default App*/
