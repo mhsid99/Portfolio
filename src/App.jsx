@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import Test from "./components/Test"; 
+/*this is just a page to test the code, if successful, 
+the same code is added to the actual components*/
 import HomePage from "./components/HomePage";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
@@ -7,6 +10,7 @@ import Projects from "./components/Projects";
 import TopButton from "./components/TopButton";
 import { useState, useEffect } from "react";
 import { PacmanLoader } from "react-spinners";
+
 
 
 export default function App() {

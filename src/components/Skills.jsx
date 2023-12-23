@@ -41,7 +41,7 @@ const Skills = () => {
 
 const SkillCard = ({ imgSrc, title }) => {
   return (
-    <div className='shadow-md hover:scale-105 transform transition duration-300'>
+    <div className='shadow-md hover:scale-110 transform transition duration-100'>
       <img src={imgSrc} alt={`${title} icon`} className="w-20 mx-auto" />
       <p className='my-4'>{title}</p>
     </div>

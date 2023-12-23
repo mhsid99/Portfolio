@@ -1,7 +1,6 @@
 import { useState } from "react";
 import React from "react";
 import {MenuIcon, XIcon } from "@heroicons/react/solid";
-//import { Link } from "react-scroll";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
